@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: Sorkar IT
+    runtime: php
+    buildCommand: "composer install --no-dev"
+    startCommand: "php -S 0.0.0.0:8000 -t public"
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_KEY
+        value: 703f03c3b37764cb810f6e75b26d5105
