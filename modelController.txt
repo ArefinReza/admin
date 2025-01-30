@@ -1,0 +1,24 @@
+make model with migration table then fill migration table according to this sql file table (banners, projects, reviews, services, site_info, team_members, visitors).
+
+
+php artisan make:model Banner -m
+php artisan make:model Project -m
+php artisan make:model Review -m
+php artisan make:model Service -m
+php artisan make:model SiteInfo -m
+php artisan make:model TeamMember -m
+php artisan make:model Visitor -m
+php artisan make:model ContactMessage -m
+php artisan make:model Todo -m
+php artisan make:model Schedule -m
+
+php artisan make:controller BannerController
+php artisan make:controller ContactMessageController
+php artisan make:controller ProfileController
+php artisan make:controller ProjectController
+php artisan make:controller ReviewController
+php artisan make:controller ServiceController
+php artisan make:controller SiteInfoController
+php artisan make:controller TeamMemberController
+php artisan make:controller VisitorController
+php artisan make:controller TodoController
