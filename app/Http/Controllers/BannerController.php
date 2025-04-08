@@ -32,7 +32,7 @@ class BannerController extends Controller
     {
         $validated = $request->validate([
             'banner_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'who_we_are' => 'required|string|max:255',
+            'who_we_are' => 'required|string|max:25555',
             'intro_video' => 'required|mimes:mp4,avi,mov|max:51200', // Limit video to 50MB
         ]);
 
@@ -60,7 +60,7 @@ class BannerController extends Controller
 
         $validated = $request->validate([
             'banner_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'who_we_are' => 'required|string|max:255',
+            'who_we_are' => 'required|string|max:25555',
             'intro_video' => 'nullable|mimes:mp4,avi,mov|max:51200',
         ]);
 

@@ -148,7 +148,7 @@
     <li class="nav-item {{ active_class(['visitors']) }}">
       <a class="nav-link" href="{{ url('/visitors') }}">
         <i class="menu-icon mdi mdi-information"></i>
-        <span class="menu-title">Site Info</span>
+        <span class="menu-title">Visitors</span>
       </a>
     </li>
 
